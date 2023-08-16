@@ -39,7 +39,12 @@ const Form = ({setError}) => {
     return (
     <div>
 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} style={{
+            display:"flex",
+            flexDirection:"column",
+            justifyContent:"center",
+            alignItems:"center"
+        }}>
         <label >Nombre</label>
         <input type="text"onChange={handleChange} name="name"/>
         <label >Genero musical</label>
