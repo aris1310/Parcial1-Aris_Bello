@@ -17,7 +17,7 @@ const Form = ({setError}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (info.name.length>2 && info.genero.length>5) {
+        if (info.name.length>2 && info.genero.length>5 && info.name[0]!== " ") {
             setCard([info,...card])
             setError(false)
             setVer(true)

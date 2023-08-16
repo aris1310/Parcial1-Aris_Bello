@@ -4,8 +4,8 @@ const Card = ({card}) => {
     card.map(
         (cartas, index) => (
           <div key={index}>
-            <h3>{cartas.name}</h3>
-            <p>{cartas.genero}</p>
+            <h3>Nombre: {cartas.name}</h3>
+            <p>Genero Musical: {cartas.genero}</p>
           </div>
         )
     )
